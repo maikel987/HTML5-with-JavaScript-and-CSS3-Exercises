@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+
+    <script type="text/javascript" src="Jungle.js"></script>
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend>Personal information:</legend>
+
+            <Table>
+
+                <tr>
+                    <th>Name: </th>
+                    <th>
+                        <input type="text" name="name" id="name">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Description:</th>
+                    <th>
+                        <textarea name="description" id="description"></textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <th>
+                        <input type="number" name="age" id="age" min="0" max="30">
+
+                    </th>
+                </tr>
+                <tr>
+                    <th>Price</th>
+                    <th>
+                        <input type="number" name="price" id="price" min="0">
+
+                    </th>
+                </tr>
+                <tr>
+                    <th>Image</th>
+                    <th>
+                        <input type="text" name="image" id="image">
+
+                    </th>
+                </tr>
+
+            </Table>
+            <input type="button" onclick="AddProduct()" value="Add"></button>
+
+        </fieldset>
+    </form>
+
+    <article id="product-container"></article>
+    
+
+</body>
+
+</html>

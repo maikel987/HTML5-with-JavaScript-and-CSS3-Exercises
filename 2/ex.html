@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+
+    <script type="text/javascript" src="Jquery.js"></script>
+    <script src="App.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="Validation.js"></script>
+
+    <style>
+    input{
+        border: solid 1px;
+    }
+    input:invalid{
+        border-color: red;
+    }
+    input:valid{
+        border-color: green;
+    }
+    
+    </style>
+
+</head>
+
+<body>
+
+
+        <form name="AddElement" method="POST" onsubmit="return validForm(event)">    
+        <fieldset>
+            <legend>Personal information:</legend>
+                
+            <Table>
+                <tr>
+                    <th><label for="name">Name : </label></th>
+                    <th>
+                        <input type="text" name="name" id="name" placeholder="Enter a name" required="required">
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="description">Description :</label></th>
+                    <th>
+                        <textarea name="description" id="description" placeholder="Enter a description" required="required"></textarea>
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="age">Age :</label></th>
+                    <th>
+                        <input type="number" name="age" id="age" min="0" max="30" required="required">
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="price">Price :</label></th>
+                    <th>
+                        <input type="number" name="price" id="price" min="0" required="required">
+                    </th>
+                </tr>
+                <tr>
+                    <th><label for="image">Image</label></th>
+                    <th>
+                        <input type="text" name="image" class="imageURL" id="image" required="required">
+                    </th>
+                </tr>
+            </Table>
+            <input type="submit"  value="Add"></button>
+        </fieldset>
+    </form>
+    <article class="product-container"></article>
+    
+    <article id="product-container2"></article>
+    
+
+</body>
+
+</html>
